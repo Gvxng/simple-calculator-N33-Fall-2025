@@ -13,6 +13,18 @@ namespace SimpleCalculator
             {
                 result = argFirstNumber + argSecondNumber;
             }
+            else if (argOperation == "-" || argOperatuin.ToLower() == "substract")
+            {
+                result = argFirstNumber - argSecondNumber;
+            }
+            else if (argOperation == "*" || argOperation.ToLower() == "multiply")
+            {
+                result = argFirstNumber * argSecondNumber;
+            }
+            else if (argOperation == "/" || argOperation.ToLower() == "divide")
+            {
+                result = argFirstNumber / argSecondNumber;
+                }
 
             return result;
         }
