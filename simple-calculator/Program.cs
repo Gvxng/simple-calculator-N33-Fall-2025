@@ -22,7 +22,7 @@ namespace SimpleCalculator
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
-
+                StringBuilder sb = new StringBuilder();
                 Console.WriteLine(result);
 
             }
