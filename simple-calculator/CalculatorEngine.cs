@@ -32,11 +32,11 @@ namespace SimpleCalculator
                 }
             else 
             {
-            console.WriteLine("You have entered an invalid operation. Valid operation are:");
-            console.WriteLine("Enter  + or add");
-            console.WriteLine("Enter  - or subtract");
-            console.WriteLine("Enter  * or multiply");
-            console.WriteLine("Enter  / or divide");
+            Console.WriteLine("You have entered an invalid operation. Valid operation are:");
+            Console.WriteLine("Enter  + or add");
+            Console.WriteLine("Enter  - or subtract");
+            Console.WriteLine("Enter  * or multiply");
+            Console.WriteLine("Enter  / or divide");
                 return "";
             }
             
