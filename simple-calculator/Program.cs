@@ -21,8 +21,8 @@ namespace SimpleCalculator
                 Console.WriteLine("Enter operation like + or add number then press Enter:");
                 string operation = Console.ReadLine();
 
-                double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
-                Console.WriteLine(result);
+                string output = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                Console.WriteLine(output);
 
             }
             catch (Exception ex)
