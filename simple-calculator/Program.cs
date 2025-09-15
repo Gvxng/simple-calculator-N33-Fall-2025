@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace SimpleCalculator
 {
     class Program
@@ -9,19 +8,15 @@ namespace SimpleCalculator
         {
             try
             {
-                // Class to convert user input
-                InputConverter inputConverter = new InputConverter();
-
-                // Class to perform actual calculations
-                CalculatorEngine calculatorEngine = new CalculatorEngine();
+                // Use static method directly, no instance needed
                 Console.WriteLine("Welcome to Simple Calculator\nEnter  your first number then press Enter:");
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 Console.WriteLine("Enter  your Second number then press Enter:");
-                double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 Console.WriteLine("Enter operation like + or add number then press Enter:");
                 string operation = Console.ReadLine();
 
-                string output = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                string output = CalculatorEngine.Calculate(operation, firstNumber, secondNumber);
                 Console.WriteLine(output);
 
             }

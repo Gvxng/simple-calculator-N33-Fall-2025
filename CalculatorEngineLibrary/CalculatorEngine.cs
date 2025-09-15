@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using SimpleCalculator; 
 
 namespace SimpleCalculator
 {
@@ -30,13 +32,19 @@ namespace SimpleCalculator
                 result = argFirstNumber / argSecondNumber;
                 text = "divided by";
                 }
-            else 
+            else if ( argOperation.ToLower() == "modulus" || argOperation == "%")
             {
-            Console.WriteLine("You have entered an invalid operation. Valid operation are:");
-            Console.WriteLine("Enter  + or add");
-            Console.WriteLine("Enter  - or subtract");
-            Console.WriteLine("Enter  * or multiply");
-            Console.WriteLine("Enter  / or divide");
+                result = argFirstNumber % argSecondNumber;
+                text = "modulus";
+            }
+            else
+            {
+                Console.WriteLine("You have entered an invalid operation. Valid operation are:");
+                Console.WriteLine("Enter  + or add");
+                Console.WriteLine("Enter  - or subtract");
+                Console.WriteLine("Enter  * or multiply");
+                Console.WriteLine("Enter  / or divide");
+                Console.WriteLine("Enter  % or modulus");
                 return "";
             }
             
