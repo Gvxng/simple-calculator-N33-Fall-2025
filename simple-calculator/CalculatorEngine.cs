@@ -25,6 +25,14 @@ namespace SimpleCalculator
             {
                 result = argFirstNumber / argSecondNumber;
                 }
+            else 
+            {
+            console.writeLine("You enter a invalid operation. Valid operation are:");
+            console.writeLine("Enter  + or add");
+            console.writeLine("Enter  - or substract");
+            console.writeLine("Enter  * or multiply");
+            console.writeLine("Enetr  / or divide");
+            }
 
             return result;
         }
